@@ -1,0 +1,7 @@
+- name: 'BrowserStack Env Setup'
+    uses: 'browserstack-test/github-actions/setup-env@master'
+    with:
+      username:  ${{ secrets.BROWSERSTACK_USERNAME }}
+      access-key: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+      build-name: 'BUILD_INFO'
+      project-name: 'browserstack-test'
